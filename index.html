@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dark_mode.css">
+    <style>
+    @media(prefers-color-scheme:dark)
+    {
+        body{
+            background-color: #171a1f;
+            color: #ce3838e1;
+        }
+        #cat-gen
+        {
+            padding: 10px;
+            display: flex;
+            margin: auto;
+            background: #222f3e;
+            border:1px solid #ce3838e1;
+            color: #ce3838e1;
+        }
+    }
+    </style>
+    </head>
+    <body>
+        <div class="container-3">
+            <h1>Rock,Paper,Scissors Game</h1>
+            <div class="flex-box-rps" id="flex-box-rps-div">
+                <img id="rock" src="images/rock.jpg" height="180px" width="180px"  onclick="rpsgame(this)">
+                <img id="paper" src="images/paper.jpg" height="180px" width="180px" onclick="rpsgame(this)">
+                <img id="scissor" src="images/scissor.jpg" height="180px" width="180px" onclick="rpsgame(this)">
+            </div>
+            <a href="index.html" id="button">Start Again</a>
+        </div>
+        <script src="daysinage.js"></script>
+    </body>
+    </html>
